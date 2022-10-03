@@ -5,7 +5,8 @@
 }
 body {
     max-width: 1600px;
-    padding: 0 20px;
+    width: 100%;
+    padding: 0;
     margin: 0 auto;
     font-family: 'CiscoSans', Arial, sans-serif;
     color: #424344;
@@ -13,18 +14,18 @@ body {
     background: #fff;
 }
 h1 {
-    font-size: 46px;
-    line-height: 56px;
-    font-weight: 200;
+    font-size: 68px;
+    font-weight: 100;
 }
 h2 {
     font-size: 38px;
-    line-height: 46px;
     font-weight: 200;
 }
+
 p {
     font-size: 18px;
-    line-height: 26px;
+    margin-bottom: 16px;
+    margin-top: 16px !important;
 }
 .container {
     max-width: none;
@@ -34,11 +35,11 @@ p {
     padding-left: 70px;
 }
 .contain-height {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
 }
 .contain-bottom {
-    padding-bottom: 80px;
+    padding-bottom: 70px;
 }
 .grey-bg {
     background: #f2f2f2;
@@ -55,10 +56,16 @@ p {
 .right {
     text-align: right;
 }
+.row {
+    justify-content: center;
+}
+.center-items {
+    align-items: center;
+}
 .button {
     display: block;
     width: fit-content;
-    margin: 0px auto;
+    margin: 40px auto 0;
     padding: 12px 30px;
     border-radius: 30px;
     background-color: #0D274D;
@@ -67,22 +74,26 @@ p {
     text-align: center;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .button:hover {
     background-color: #07162c;
     color: #fff;
 }
 .intro-description {
-    padding: 50px 45px;
+    padding: 0px 45px;
+}
+.intro-description p {
+    font-size: 24px;
 }
 .sub-section {
-    padding: 80px 70px 40px;
+    padding: 70px 70px 30px;
     margin: auto;
     max-width: 875px;
 }
 .info-div {
     padding: 70px 0px;
+    justify-content: center;
 }
 .col-img {
     max-width: 250px;
@@ -137,6 +148,9 @@ svg {
 }
 
 @media screen and (max-width: 992px) {
+    body {
+        max-width: 992px;
+    }
     h1 {
         font-size: 31px;
         line-height: 40px;
@@ -177,6 +191,9 @@ svg {
 }
 
 @media screen and (max-width: 767px) {
+    body {
+        max-width: 767px;
+    }
     h1 {
         font-size: 36px;
         line-height: 44px;
@@ -188,6 +205,9 @@ svg {
     p {
         font-size: 16px;
         line-height: 24px;
+    }
+    .row {
+        margin: auto;
     }
     #first {
         order: 1;
@@ -259,6 +279,9 @@ svg {
  }
 
 @media screen and (max-width: 576px) { 
+    body {
+        max-width: 576px;
+    }
     h1 {
         font-size: 28px;
         line-height: 34px;
@@ -283,9 +306,10 @@ svg {
         padding-top: 0px;
     }
     .row.mobile {
-        width: 95%;
+        width: 80%;
         padding-bottom: 20px;
         margin: auto;
+        text-align: center;
     }
     .text-col {
         justify-content: normal;
@@ -309,6 +333,10 @@ svg {
     .info-div {
         padding: 10px 0 30px;
         margin: 0;
+        flex-direction: column-reverse;
+    }
+    .info-div > .text-col {
+        margin-top: 20px;
     }
     .col-6 {
         margin: 0 auto;
@@ -317,17 +345,24 @@ svg {
     .infrastructure-col {        
         padding: 0px 0px 20px;
     }
+    .info-div,
+    .sub-section,
+    .intro-description {
+        width: 85%;
+    }
+    .infra,
+    .infrastructure-col,
+    .infrastructure-col > .row {
+        width: 80%;
+    }
     .col-h2 {
         margin-top: 20px;
     }
     .col-img {
         width: 70%;
     }
-    .infra {
-        width: 100%;
-    }
     .info-section {
-        padding: 40px 10px;
+        padding: 40px 25px;
     }
     .info-section > h1 {
         padding: 25px;
@@ -367,7 +402,7 @@ svg {
 @keyframes bounceInLeft {
 	0% {
 		opacity: 0;
-		transform: translateX(-2000px);
+		transform: translateX(-200px);
 	}
     60% {
 		opacity: 0;
@@ -380,7 +415,7 @@ svg {
 @keyframes bounceInRight {
 	0% {
 		opacity: 0;
-		transform: translateX(2000px);
+		transform: translateX(200px);
 	}
     60% {
 		opacity: 0;
