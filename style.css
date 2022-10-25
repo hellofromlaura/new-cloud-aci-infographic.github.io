@@ -13,56 +13,56 @@ body {
     font-weight: 100;
     background: #fff;
 }
-h1 {
+.h1-db-custom {
     font-size: 68px;
     font-weight: 100;
 }
-h2 {
+.h2-db-custom {
     font-size: 38px;
     font-weight: 200;
 }
 
-p {
+.p-db-custom {
     font-size: 18px;
     margin-bottom: 16px;
     margin-top: 16px !important;
 }
-.container {
+.container-db-custom {
     max-width: none;
 }
-.contain-width {
+.contain-width-db-custom {
     padding-right: 70px;
     padding-left: 70px;
 }
-.contain-height {
+.contain-height-db-custom {
     padding-top: 70px;
     padding-bottom: 70px;
 }
-.contain-bottom {
+.contain-bottom-db-custom {
     padding-bottom: 70px;
 }
-.grey-bg {
+.grey-bg-db-custom {
     background: #f2f2f2;
 }
-.white-bg {
+.white-bg-db-custom {
     background-color: #fff;
 }
-.center {
+.center-bg-db-custom {
     text-align: center;
 }
-.left{
+.left-db-custom{
     text-align: left;
 }
-.right {
+.right-bg-db-custom {
     text-align: right;
 }
-.row {
+.row-bg-db-custom {
     justify-content: center;
 }
-.center-items {
+.center-items-db-custom {
     align-items: center;
 }
-.custom-button {
+.custom-button-db-custom {
     display: block;
     width: fit-content;
     margin: 40px auto 0;
@@ -76,73 +76,73 @@ p {
     line-height: 24px;
     font-weight: 400;
 }
-.custom-button:hover {
+.custom-button-db-custom:hover {
     background-color: #07162c;
     color: #fff;
 }
-.intro-description {
+.intro-description-db-custom {
     padding: 0px 45px;
 }
-.intro-description p {
+.intro-description-db-custom .p-db-custom {
     font-size: 24px;
 }
-.sub-section {
+.sub-section-db-custom {
     padding: 70px 70px 30px;
     margin: auto;
     max-width: 875px;
 }
-.info-div {
+.info-div-db-custom {
     padding: 70px 0px;
     justify-content: center;
 }
-.col-img {
+.col-img-db-custom {
     max-width: 250px;
     display: block;
     margin: 0px auto;
 }
-.col-3 {
+.col-3-db-custom {
     height: 100%;
 }
-.col-h2 {
+.col-h2-db-custom {
     margin: 30px 0 0;
     height: 100%;
 }
-.text-col {
+.text-col-db-custom {
     display: flex;
     align-items: center;  
     max-width: 500px;
 }
-.image-col {
+.image-col-db-custom {
     max-width: 300px;
 }
-.image-col.bigger {
+.image-col-db-custom.bigger-db-custom {
     max-width: 400px;
 }
 svg {
     width: 60px;
 }
-.info-section > img {
+.info-section-db-custom > img {
     margin: 40px 0;
     max-width: 25%;
 }
-.info-section > img.bounceInLeft {
+.info-section-db-custom > img.bounceInLeft {
     position: relative;
     left: 20px;
     z-index: 10;
 }
-.info-section > img.bounceInRight {
+.info-section-db-custom > img.bounceInRight {
     position: relative;
     right: 20px;
 }
-.info-section > h1 {
+.info-section-db-custom > .h1-db-custom {
     padding: 50px 45px;
     margin: 0;
 }
-.ref {
+.ref-db-custom {
     background-color: #1E4471;
     font-weight: 200;
 }
-.ref > h3 {
+.ref-db-custom > h3 {
     margin-bottom: 20px;
     font-weight: 200;
 }
@@ -151,41 +151,41 @@ svg {
     body {
         max-width: 992px;
     }
-    h1 {
+    .h1-db-custom {
         font-size: 31px;
         line-height: 40px;
     }
-    p {
+    .p-db-custom {
         font-size: 16px;
         line-height: 23px;
     }
-    .col-3 {
+    .col-3-db-custom {
         padding: 0;
     }
-    .col-4 {
+    .col-4-db-custom {
         width: 40%;
     }
-    .col-8 {
+    .col-8-db-custom {
         width: 60%;
     }
-    .col-img {
+    .col-img-db-custom {
         max-width: 190px;
     }
-    .contain-width {
+    .contain-width-db-custom {
         padding-right: 40px;
         padding-left: 40px;
     }
-    .intro-description, .info-section > h1 {
+    .intro-description-db-custom, .info-section-db-custom > .h1-db-custom {
         padding: 40px 0px 40px 40px;
     }
-    .sub-section {
+    .sub-section-db-custom {
         padding: 30px;
     }
-    .contain-height {
+    .contain-height-db-custom {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .info-div {
+    .info-div-db-custom {
         padding: 40px 0px;
     }
 }
@@ -194,36 +194,36 @@ svg {
     body {
         max-width: 767px;
     }
-    h1 {
+    .h1-db-custom {
         font-size: 36px;
         line-height: 44px;
     }
-    h2 {
+    .h2-db-custom {
         font-size: 28px;
         line-height: 34px;
     }
-    p {
+    .p-db-custom {
         font-size: 16px;
         line-height: 24px;
     }
-    .row {
+    .row-bg-db-custom {
         margin: auto;
     }
-    #first {
+    #first-db-custom {
         order: 1;
         margin: 0 auto;
         width: 60%;
     }
-    #second {
+    #second-db-custom {
         order: 2;
     }
-    .intro-description {
+    .intro-description-db-custom {
         width: 100%;
         margin: 0 auto;
         padding: 25px 0px 0px;
         text-align: center;
     }
-    .sub-section {
+    .sub-section-db-custom {
         padding: 40px 40px 1px;
     }
     svg {
@@ -234,25 +234,25 @@ svg {
     .checkmark {
         margin-left: -20px;
     }
-    .info-div {
+    .info-div-db-custom {
         padding: 45px 0px;
     }
-    .image-col {
+    .image-col-db-custom {
         max-width: 250px;
     }
-    .col-img {
+    .col-img-db-custom {
         width: 40%;
     }
-    .contain-width.mobile {
+    .contain-width-db-custom.mobile {
         padding: 25px 0px 0px;
     }
-    .col-3, .col-2 {
+    .col-3-db-custom, .col-2-db-custom {
         width: 12%;
     }
-    .col-9 {
+    .col-9-db-custom {
         width: 88%;
     }
-    .stacked {
+    .stacked-db-custom {
         width: 500px;
         padding: 40px 0;
         margin: 0 auto;
@@ -260,20 +260,20 @@ svg {
     .mobile > img {
         padding: 25px;
     }
-    .infrastructure-col {
+    .infrastructure-col-db-custom {
         padding: 20px;
     }
-    .image-col, .text-col {
+    .image-col-db-custom, .text-col-db-custom {
         padding: 0;
     }
-    .info-section {
+    .info-section-db-custom {
         padding: 40px 30px;
     }
-    .padding-bottom {
+    .padding-bottom-db-custom {
         padding-bottom: 0;
         margin-bottom: 0;
     }
-    .center-margin {
+    .center-margin-db-custom {
         margin: auto;
     }
  }
@@ -282,43 +282,43 @@ svg {
     body {
         max-width: 576px;
     }
-    h1 {
+    .h1-db-custom {
         font-size: 28px;
         line-height: 34px;
     }
-    h2 {
+    .h2-db-custom {
         font-size: 24px;
         line-height: 28px;
     }
-    p {
+    .p-db-custom {
         font-size: 16px;
         line-height: 22px;
     }
-    .container {
+    .container-db-custom {
         padding-right: var(--bs-gutter-x,0rem);
         padding-left: var(--bs-gutter-x,0rem);
     }
-    .contain-width {
+    .contain-width-db-custom {
         padding-right: 5px;
         padding-left: 5px;
     }
-    .contain-height.mobile {
+    .contain-height-db-custom.mobile {
         padding-top: 0px;
     }
-    .row.mobile {
+    .row-bg-db-custom.mobile {
         width: 80%;
         padding-bottom: 20px;
         margin: auto;
         text-align: center;
     }
-    .text-col {
+    .text-col-db-custom {
         justify-content: normal;
     }
-    .text-col.mobile {
+    .text-col-db-custom.mobile {
         padding: 0px;
         text-align: center;
     }
-    .sub-section {
+    .sub-section-db-custom {
         padding: 25px 5px 5px;
     }
     svg {
@@ -327,53 +327,53 @@ svg {
     .checkmark {
         margin-left: -10px;
     }
-    .stacked {
+    .stacked-db-custom {
         width: 100%;
     }
-    .info-div {
+    .info-div-db-custom {
         padding: 10px 0 30px;
         margin: 0;
         flex-direction: column-reverse;
     }
-    .info-div > .text-col {
+    .info-div-db-custom > .text-col-db-custom {
         margin-top: 20px;
     }
-    .col-6 {
+    .col-6-db-custom {
         margin: 0 auto;
         width: 100%;
     }
-    .infrastructure-col {        
+    .infrastructure-col-db-custom {        
         padding: 0px 0px 20px;
     }
-    .info-div,
-    .sub-section,
-    .intro-description {
+    .info-div-db-custom,
+    .sub-section-db-custom,
+    .intro-description-db-custom {
         width: 85%;
     }
-    .infra,
-    .infrastructure-col,
-    .infrastructure-col > .row {
+    .infra-db-custom,
+    .infrastructure-col-db-custom,
+    .infrastructure-col-db-custom > .row-bg-db-custom {
         width: 80%;
     }
-    .col-h2 {
+    .col-h2-db-custom {
         margin-top: 20px;
     }
-    .col-img {
+    .col-img-db-custom {
         width: 70%;
     }
-    .info-section {
+    .info-section-db-custom {
         padding: 40px 25px;
     }
-    .info-section > h1 {
+    .info-section-db-custom > .h1-db-custom {
         padding: 25px;
     }
-    .info-section > img.bounceInLeft {
+    .info-section-db-custom > img.bounceInLeft {
         left: 10px;
     }
-    .info-section > img.bounceInRight {
+    .info-section-db-custom > img.bounceInRight {
         right: 10px;
     }
-    .info-section > img {
+    .info-section-db-custom > img {
         max-width: 48%;
     }
  }
