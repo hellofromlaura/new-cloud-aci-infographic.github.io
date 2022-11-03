@@ -56,8 +56,8 @@ body {
 .right-bg-db-custom {
     text-align: right;
 }
-.row-bg-db-custom {
-    justify-content: center;
+.row {
+    justify-content: center !important;
 }
 .center-items-db-custom {
     align-items: center;
@@ -162,11 +162,11 @@ svg {
     .col-3-db-custom {
         padding: 0;
     }
-    .col-4-db-custom {
-        width: 40%;
+    .col-4 {
+        width: 40% !important;
     }
-    .col-8-db-custom {
-        width: 60%;
+    .col-8 {
+        width: 60% !important;
     }
     .col-img-db-custom {
         max-width: 190px;
@@ -206,8 +206,8 @@ svg {
         font-size: 16px;
         line-height: 24px;
     }
-    .row-bg-db-custom {
-        margin: auto;
+    .row {
+        margin: auto !important;
     }
     #first-db-custom {
         order: 1;
@@ -246,11 +246,11 @@ svg {
     .contain-width-db-custom.mobile {
         padding: 25px 0px 0px;
     }
-    .col-3-db-custom, .col-2-db-custom {
+    .col-3-db-custom, .col-2 {
         width: 12%;
     }
-    .col-9-db-custom {
-        width: 88%;
+    .col-9 {
+        width: 88% !important;
     }
     .stacked-db-custom {
         width: 500px;
@@ -305,7 +305,7 @@ svg {
     .contain-height-db-custom.mobile {
         padding-top: 0px;
     }
-    .row-bg-db-custom.mobile {
+    .row.mobile {
         width: 80%;
         padding-bottom: 20px;
         margin: auto;
@@ -338,9 +338,9 @@ svg {
     .info-div-db-custom > .text-col-db-custom {
         margin-top: 20px;
     }
-    .col-6-db-custom {
-        margin: 0 auto;
-        width: 100%;
+    .col-6 {
+        margin: 0 auto !important;
+        width: 100% !important;
     }
     .infrastructure-col-db-custom {        
         padding: 0px 0px 20px;
@@ -352,7 +352,7 @@ svg {
     }
     .infra-db-custom,
     .infrastructure-col-db-custom,
-    .infrastructure-col-db-custom > .row-bg-db-custom {
+    .infrastructure-col-db-custom > .row {
         width: 80%;
     }
     .col-h2-db-custom {
