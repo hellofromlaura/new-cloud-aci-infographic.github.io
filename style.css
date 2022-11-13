@@ -12,6 +12,7 @@ body {
     color: #424344;
     font-weight: 100;
     background: #fff;
+    text-align: left;
 }
 .h1-db-custom {
     font-size: 68px;
@@ -21,46 +22,27 @@ body {
     font-size: 38px;
     font-weight: 200;
 }
-
 .p-db-custom {
     font-size: 18px;
     margin-bottom: 16px;
     margin-top: 16px !important;
 }
-.container-db-custom {
-    max-width: none;
+.db-contain {
+    padding: 70px;
 }
-.contain-width-db-custom {
-    padding-right: 70px;
-    padding-left: 70px;
-}
-.contain-height-db-custom {
-    padding-top: 70px;
-    padding-bottom: 70px;
-}
-.contain-bottom-db-custom {
-    padding-bottom: 70px;
-}
-.grey-bg-db-custom {
+.db-grey-bg {
     background: #f2f2f2;
 }
-.white-bg-db-custom {
-    background-color: #fff;
-}
-.center-bg-db-custom {
-    text-align: center;
-}
-.left-db-custom{
-    text-align: left;
-}
-.right-bg-db-custom {
-    text-align: right;
-}
-.row {
-    justify-content: center !important;
-}
-.center-items-db-custom {
+.flex-db {
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+.db-col {
+    flex-direction: column;
+}
+.align-top-db {
+    align-items: flex-start;
 }
 .custom-button-db-custom {
     display: block;
@@ -69,7 +51,7 @@ body {
     padding: 12px 30px;
     border-radius: 30px;
     background-color: #0D274D;
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     text-align: center;
     font-size: 16px;
@@ -79,72 +61,105 @@ body {
 .custom-button-db-custom:hover {
     background-color: #07162c;
     color: #fff;
+    text-decoration: none !important;
 }
-.intro-description-db-custom {
+.hero img {
+    width: 35%;
+}
+.hero-description {
     padding: 0px 45px;
 }
-.intro-description-db-custom .p-db-custom {
+.hero-description .p-db-custom {
     font-size: 24px;
 }
-.sub-section-db-custom {
-    padding: 70px 70px 30px;
+.db-subsection {
+    padding: 0px 70px 30px;
     margin: auto;
     max-width: 875px;
+    text-align: center;
 }
-.info-div-db-custom {
-    padding: 70px 0px;
-    justify-content: center;
+.info-div {
+    padding: 40px 0px 0px;
 }
-.col-img-db-custom {
-    max-width: 250px;
-    display: block;
-    margin: 0px auto;
-}
-.col-3-db-custom {
-    height: 100%;
-}
-.col-h2-db-custom {
-    margin: 30px 0 0;
-    height: 100%;
+.info-div img {
+    width: 40%;
+    margin: 0 20px;
 }
 .text-col-db-custom {
     display: flex;
     align-items: center;  
     max-width: 500px;
 }
-.image-col-db-custom {
+.db-image-col {
     max-width: 300px;
 }
-.image-col-db-custom.bigger-db-custom {
+.db-image-col.bigger-db-custom {
     max-width: 400px;
 }
 svg {
     width: 60px;
 }
-.info-section-db-custom > img {
-    margin: 40px 0;
-    max-width: 25%;
+.height-img {
+    width: auto;
+    height: 220px;
 }
-.info-section-db-custom > img.bounceInLeft {
-    position: relative;
-    left: 20px;
-    z-index: 10;
+.section-one,
+.section-five  {
+    justify-content: space-evenly;
 }
-.info-section-db-custom > img.bounceInRight {
-    position: relative;
-    right: 20px;
+.section-one > div,
+.section-five > div  {
+    width: 25%;
 }
-.info-section-db-custom > .h1-db-custom {
-    padding: 50px 45px;
-    margin: 0;
+.section-five img,
+.section-one img {
+    display: block;
+    max-width: none;
+    height: 250px;
+    margin: 0px auto;
 }
-.ref-db-custom {
-    background-color: #1E4471;
-    font-weight: 200;
+.section-four > .flex-db,
+.section-two > .flex-db {
+    width: 750px;
+    margin: auto;
+    justify-content: space-around;
 }
-.ref-db-custom > h3 {
-    margin-bottom: 20px;
-    font-weight: 200;
+.section-three .db-col {
+    width: 550px;
+    align-items: baseline;
+}
+.flex-db.check {
+    align-items: baseline;
+}
+.outro {
+    margin-bottom: 30px;
+}
+.outro img {
+    width: 300px;
+}
+.outro .bounceInRight {
+    margin-left: -45px;
+}
+.outro .bounceInLeft {
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 1260px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero img {
+        margin-bottom: 30px;
+    }
+    .hero img {
+        width: 45%;
+    }
+    .section-one > div, .section-five > div {
+        width: 33%;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -159,34 +174,43 @@ svg {
         font-size: 16px;
         line-height: 23px;
     }
-    .col-3-db-custom {
-        padding: 0;
+    .db-contain {
+        padding: 40px;
     }
-    .col-4 {
-        width: 40% !important;
-    }
-    .col-8 {
-        width: 60% !important;
-    }
-    .col-img-db-custom {
-        max-width: 190px;
-    }
-    .contain-width-db-custom {
-        padding-right: 40px;
-        padding-left: 40px;
-    }
-    .intro-description-db-custom, .info-section-db-custom > .h1-db-custom {
+    .hero-description {
         padding: 40px 0px 40px 40px;
     }
-    .sub-section-db-custom {
-        padding: 30px;
+    .db-subsection {
+        padding: 0px 30px 20px;
     }
-    .contain-height-db-custom {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .info-div-db-custom {
+    .info-div {
         padding: 40px 0px;
+    }
+    .db-image-col {
+        max-width: 270px;
+    }
+}
+@media screen and (max-width: 865px) {
+    .flex-db.check {
+        align-items: center;
+    }
+    .section-one,
+    .section-five {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-one > div,
+    .section-five > div  {
+        width: 70%;
+    }
+    .section-five img, .section-one img {
+        max-width: none;
+        height: auto;
+        width: 50%;
+        margin-top: 20px;
+    }
+    .section-four > .flex-db, .section-two > .flex-db {
+        width: 700px;
     }
 }
 
@@ -206,75 +230,46 @@ svg {
         font-size: 16px;
         line-height: 24px;
     }
-    .row {
-        margin: auto !important;
-    }
-    #first-db-custom {
-        order: 1;
-        margin: 0 auto;
-        width: 60%;
-    }
-    #second-db-custom {
-        order: 2;
-    }
-    .intro-description-db-custom {
+    .hero-description {
         width: 100%;
         margin: 0 auto;
         padding: 25px 0px 0px;
         text-align: center;
-    }
-    .sub-section-db-custom {
-        padding: 40px 40px 1px;
     }
     svg {
         width: 50px;
         display:block;
         margin-left: auto;
     }
-    .checkmark {
-        margin-left: -20px;
-    }
-    .info-div-db-custom {
+    .info-div {
         padding: 45px 0px;
     }
-    .image-col-db-custom {
-        max-width: 250px;
+    .db-image-col {
+        max-width: 230px;
     }
-    .col-img-db-custom {
-        width: 40%;
-    }
-    .contain-width-db-custom.mobile {
-        padding: 25px 0px 0px;
-    }
-    .col-3-db-custom, .col-2 {
-        width: 12%;
-    }
-    .col-9 {
-        width: 88% !important;
-    }
-    .stacked-db-custom {
-        width: 500px;
-        padding: 40px 0;
-        margin: 0 auto;
-    }
-    .mobile > img {
-        padding: 25px;
-    }
-    .infrastructure-col-db-custom {
-        padding: 20px;
-    }
-    .image-col-db-custom, .text-col-db-custom {
+    .db-image-col, .text-col-db-custom {
         padding: 0;
     }
-    .info-section-db-custom {
-        padding: 40px 30px;
+    .section-four > .flex-db, .section-two > .flex-db {
+        width: 550px;
     }
-    .padding-bottom-db-custom {
-        padding-bottom: 0;
-        margin-bottom: 0;
+    .section-four .db-image-col {
+        width: 200px;
     }
-    .center-margin-db-custom {
-        margin: auto;
+    .db-image-col.bigger-db-custom {
+        width: 250px;
+    }
+    .text-col-db-custom {
+        max-width: 275px;
+    }
+    .db-image-col.bigger-db-custom {
+        max-width: 325px;
+    }
+    .height-img {
+        height: 190px;
+    }
+    .outro img {
+        width: 200px;
     }
  }
 
@@ -294,87 +289,59 @@ svg {
         font-size: 16px;
         line-height: 22px;
     }
-    .container-db-custom {
-        padding-right: var(--bs-gutter-x,0rem);
-        padding-left: var(--bs-gutter-x,0rem);
-    }
-    .contain-width-db-custom {
-        padding-right: 5px;
-        padding-left: 5px;
-    }
-    .contain-height-db-custom.mobile {
-        padding-top: 0px;
-    }
-    .row.mobile {
-        width: 80%;
-        padding-bottom: 20px;
-        margin: auto;
-        text-align: center;
+    .section-four > .flex-db, .section-two > .flex-db {
+        flex-direction: column;
+        margin-top: 20px;
     }
     .text-col-db-custom {
         justify-content: normal;
-    }
-    .text-col-db-custom.mobile {
-        padding: 0px;
-        text-align: center;
-    }
-    .sub-section-db-custom {
-        padding: 25px 5px 5px;
+        align-items: baseline;
     }
     svg {
         margin-left: -10px;
     }
-    .checkmark {
-        margin-left: -10px;
+    .info-div {
+        padding: 30px 0 0px;
+        margin: 0 auto;
+        flex-direction: column;
     }
-    .stacked-db-custom {
-        width: 100%;
-    }
-    .info-div-db-custom {
-        padding: 10px 0 30px;
-        margin: 0;
-        flex-direction: column-reverse;
-    }
-    .info-div-db-custom > .text-col-db-custom {
-        margin-top: 20px;
-    }
-    .col-6 {
-        margin: 0 auto !important;
-        width: 100% !important;
-    }
-    .infrastructure-col-db-custom {        
-        padding: 0px 0px 20px;
-    }
-    .info-div-db-custom,
-    .sub-section-db-custom,
-    .intro-description-db-custom {
-        width: 85%;
-    }
-    .infra-db-custom,
-    .infrastructure-col-db-custom,
-    .infrastructure-col-db-custom > .row {
+    .info-div img {
         width: 80%;
     }
-    .col-h2-db-custom {
-        margin-top: 20px;
+    .info-div > .text-col-db-custom {
+        margin-top: 30px !important;
+        text-align: center;
     }
-    .col-img-db-custom {
-        width: 70%;
+    .info-div,
+    .hero-description {
+        width: 85%;
     }
-    .info-section-db-custom {
-        padding: 40px 25px;
+    .height-img {
+        height: auto;
+        width: 40%;
     }
-    .info-section-db-custom > .h1-db-custom {
-        padding: 25px;
+    .hero img {
+        width: 60%;
     }
-    .info-section-db-custom > img.bounceInLeft {
-        left: 10px;
+
+    .section-four > .flex-db, .section-two > .flex-db {
+        width: 100%;
     }
-    .info-section-db-custom > img.bounceInRight {
-        right: 10px;
+    .text-col-db-custom {
+        max-width: 80%;
+        align-items: center;
     }
-    .info-section-db-custom > img {
-        max-width: 48%;
+    .db-image-col {
+        max-width: 55%;
+    }
+    .flex-db.reverse {
+        flex-direction: column-reverse;
+    }
+    .section-three > .flex-db {
+        flex-direction: column-reverse;
+    }
+    .section-three .db-col {
+        width: 80%;
     }
  }
 
